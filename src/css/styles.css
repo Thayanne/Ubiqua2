@@ -1,0 +1,39 @@
+html, body, .wrapper {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #1E6296;
+}
+
+.day-time {
+	height: 33.3%;
+	width: 100%;
+}
+
+.morning {
+	background-image: url('../img/morning.jpg');
+	background-repeat: repeat-x;
+}
+
+.dawn {
+	background-image: url('../img/dawn.jpg');
+	background-repeat: repeat-x;
+}
+
+.night {
+	background-image: url('../img/night.jpg');
+	background-repeat: repeat-x;
+}
+
+.star {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	left:50%;
+    margin-left:-50px;
+}
+
+.star img {
+	width: 100px;
+	height: 100px;
+}
