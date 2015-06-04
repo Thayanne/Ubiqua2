@@ -1,38 +1,50 @@
+@-webkit-keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
 html, body, .wrapper {
-	margin: 0;
 	width: 100%;
 	height: 100%;
 	background-color: #1E6296;
 }
-
 .day-time {
 	height: 33.3%;
 	width: 100%;
 }
-
 .morning {
 	background-image: url('../img/morning.jpg');
-	background-repeat: repeat-x;
+	background-size: cover;
 }
-
 .dawn {
 	background-image: url('../img/dawn.jpg');
-	background-repeat: repeat-x;
+	background-size: cover;
 }
-
 .night {
 	background-image: url('../img/night.jpg');
-	background-repeat: repeat-x;
+	background-size: cover;
 }
-
 .star {
 	padding: 0;
 	margin: 0;
 	position: absolute;
-	left:50%;
-    margin-left:-50px;
+	left: 50%;
+	top: 40%;
+	margin-left: -50px;
+	-webkit-transition: top 1s ease-in-out;
+	transition: top 1s ease-in-out;
 }
-
+.star.rotate {
+	-webkit-animation: spin .8s linear infinite;
+	animation: spin .8s linear infinite;
+}
 .star img {
 	width: 100px;
 	height: 100px;
