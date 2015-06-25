@@ -1,7 +1,7 @@
 $(function () {
     var LIGHT_33 = 6000;
     var LIGHT_23 = 2000;
-    var LIGHT_13 = 50;
+    var LIGHT_13 = 10;
 
     function update() {
         $.get ('http://sensor-api.localdata.com/api/v1/sources/ci4vjer3i000e02s7r2cj23gs/entries.json?count=1&sort=desc')
